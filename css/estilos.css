@@ -8,26 +8,70 @@ Body {
   background-color:  #02010a;
   text-align: left;
 }
-@media (max-width:900px) {
-  .contenido{
+@media (min-width:900px){
+  .contenedor {
+  	display: flex;
+  	flex-direction: row;
+    -webkit-flex-direction: row;
+  }
+  .contenedor > div {
+  	text-align: center;
+  	width: 100%;
+  }
+  .content{
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+  .ad{
+  	width:90%;
+  }
+  #about {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #C6d5c5;
+    display: flex;
+    flex-flow: row;
     width: 100%;
   }
+  #about h1{
+    display: block;
+    font-weight: normal;
+    margin: 0 0 .6em .2em;
+    text-decoration: none;
+    color: black;
+  }
+  div[class^='Caja']{
+    margin-left: 7%;
+    text-align: justify;
+    padding: 10px;
+  }
+  #contentinfo {padding-bottom: 2em; text-align: right; }
+  .galeria {
+  	display: flex;
+  	flex-direction: row;
+    flex-flow: wrap;
+    -webkit-flex-direction: row;
+    -webkit-flex-flow: wrap;
+  }
+  .galeria > div {
+  	text-align: center;
+  	width: 30.999%;
+  }
 }
 
-@media (min-width 900px){
-  .contenido{
-    width: 0%;
-  }
-  .Caja{
-    width: 0%;
-  }
-  .imagen2{
-    display: flex;
-    flex-flow: column wrap;
-    width: 0%;
+@media (max-width 900px){
+  .galeria > div {
+  	width: 100%;
   }
 }
 
+#about {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #C6d5c5;
+  width: 100%;
+}
 .izq img:hover{
   transform: rotate(10deg);
   -ms-transform: rotate(10deg);
@@ -58,13 +102,9 @@ header{
 a{
   color: white;
 }
-.ad{
-	width:90%;
-}
 
 strong, b {font-weight: bold;}
 em, i {font-style: italic;}
-
 
 .body {clear: both; margin: 0 auto; width: 100%;}
 
@@ -120,30 +160,7 @@ em, i {font-style: italic;}
     background: #3399CC;
     text-shadow: Underline !important;
   }
-#contenido {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.contenedor {
-	display: flex;
-	flex-direction: row;
-}
-.galeria {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-}
-.galeria > div {
-	text-align: center;
-	width: 28.8%;
-}
-.contenedor > div {
-	text-align: center;
-	width: 100%;
-}
+
 .central {
   display: flex;
 	flex-direction: row;
@@ -152,30 +169,24 @@ em, i {font-style: italic;}
 	text-align: center;
 	width: 100%;
 }
-.central img{
-  width: 75%;
-}
 .imagen1{
-  margin: 0 auto;
-  padding: 30px;
+  padding: 15px;
   background-color: #82c3a6;
 }
 .imagen2{
-  padding: 30px;
+  padding: 15px;
+  background-color: #d5c75f;
+}
+.imagen{
+  padding: 15px;
   background-color: #d5c75f;
 }
 
 img{
   box-shadow: 2px 2px #02010a;
   -witkit-box-shadow:  2px 2px #02010a;
-  width: 90%;
 }
 
-.content{
-  -moz-column-count: 4;
-  -webkit-column-count: 4;
-  column-count: 4;
-}
 .img1{
   -webkit-filter: blur(10px);
   filter: blur(10px);
@@ -204,25 +215,3 @@ img{
 .img5{
   order: 5;
 }
-#about {
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  background-color: #C6d5c5;
-  display: flex;
-  flex-flow: row;
-  width: 100%;
-}
-#about h1{
-  display: block;
-  font-weight: normal;
-  margin: 0 0 .6em .2em;
-  text-decoration: none;
-  color: black;
-}
-div[class^='Caja']{
-  margin-left: 7%;
-  text-align: justify;
-  padding: 10px;
-
-}
-#contentinfo {padding-bottom: 2em; text-align: right; }
