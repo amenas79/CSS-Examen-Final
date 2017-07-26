@@ -1,0 +1,226 @@
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('DancingScript.otf');
+}
+Body {
+  font-family: 'Dancing Script';
+  color: #000305;
+  background-color:  #02010a;
+  text-align: left;
+}
+@media (min-width:900px){
+  .contenedor {
+  	display: flex;
+  	flex-direction: row;
+    -webkit-flex-direction: row;
+  }
+  .contenedor > div {
+  	text-align: center;
+  	width: 100%;
+  }
+  .content{
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+  .ad{
+  	width:90%;
+  }
+  #about {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #C6d5c5;
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+  }
+  #about h1{
+    display: block;
+    font-weight: normal;
+    margin: 0 0 .6em .2em;
+    text-decoration: none;
+    color: black;
+  }
+  div[class^='Caja']{
+    margin-left: 7%;
+    text-align: justify;
+    padding: 10px;
+  }
+  #contentinfo {padding-bottom: 2em; text-align: right; }
+  .galeria {
+  	display: flex;
+  	flex-direction: row;
+    flex-flow: wrap;
+    -webkit-flex-direction: row;
+    -webkit-flex-flow: wrap;
+  }
+  .galeria > div {
+  	text-align: center;
+  	width: 30.999%;
+  }
+}
+
+@media (max-width 900px){
+  .galeria > div {
+  	width: 100%;
+  }
+  .galeria img {
+  	width: 20%;
+  }
+}
+
+#about {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #C6d5c5;
+  width: 100%;
+}
+.izq img:hover{
+  transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  box-shadow: 2px 2px #82c3a6;
+}
+.imggen3 img:hover{
+  transform: translate(20px,-5px);
+  -ms-transform: translate(20px,-5px);
+  -webkit-transform: translate(20px,-5px);
+  box-shadow: 2px 2px #82c3a6;
+}
+
+@-webkit-keyframes amiheader{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+header{
+  animation: amiheader 1s;,
+}
+a{
+  color: white;
+}
+
+strong, b {font-weight: bold;}
+em, i {font-style: italic;}
+
+.body {clear: both; margin: 0 auto; width: 100%;}
+
+#banner ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+#banner li{
+  float: right;
+  display: block;
+  margin: 0px 5px;
+  padding: 15px 0px;
+  height: 100%;
+	list-style-type: none;
+  color: white;
+}
+
+	#banner h1{
+		width: 80%;
+    color: white;
+    text-shadow: 2px 2px #02010a;
+	}
+
+	#banner h1 strong {
+    font-size: 0.5em;
+    font-weight: normal;
+  }
+
+	#banner {
+		background: #5b7989;
+		font-size: 1.5em;
+		height: 100%;
+		width: 100%;
+		border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+		-moz-border-top-right-radius: 10px;
+    -moz-border-top-left-radius: 10px;
+		-webkit-border-top-right-radius: 10px;
+    -webkit-border-top-left-radius: 10px;
+	}
+  #banner a:link, #banner a:visited {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+  }
+  #banner a:hover, #banner a:active{
+    border-radius: 15px 10px;
+    background: hsla(200, 60%, 50%, 0.65);
+    text-shadow: Underline !important;
+  }
+  #banner .active a:link, #banner .active a:visited {
+    border-radius: 15px 10px 6px;
+    background: #3399CC;
+    text-shadow: Underline !important;
+  }
+
+.central {
+  display: flex;
+	flex-direction: row;
+}
+.central > div {
+	text-align: center;
+	width: 100%;
+}
+.imagen1{
+  padding: 15px;
+  background-color: #82c3a6;
+}
+.imagen2{
+  padding: 15px;
+  background-color: #d5c75f;
+}
+.imagen2 img {
+  width: 100%;
+}
+.imagen{
+  padding: 15px;
+  background-color: #d5c75f;
+}
+
+img{
+  box-shadow: 2px 2px #02010a;
+  -witkit-box-shadow:  2px 2px #02010a;
+}
+
+.img1{
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+  order: 1;
+}
+.img2{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  order: 2;
+}
+.img4{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  order: 4;
+}
+.img6{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  order: 6;
+}
+.img3{
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+  order: 3;
+}
+.img5{
+  order: 5;
+}
